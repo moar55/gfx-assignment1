@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moar/CLionProjects/Assignment1/main.cpp
+GL/glut.h
+-
+cstdio
+-
+math.h
+-
+vector
+-
+random
+/home/moar/CLionProjects/Assignment1/random
+soil-master/src/SOIL/SOIL.h
+/home/moar/CLionProjects/Assignment1/soil-master/src/SOIL/SOIL.h
+
+/home/moar/CLionProjects/Assignment1/soil-master/src/SOIL/SOIL.h
+
