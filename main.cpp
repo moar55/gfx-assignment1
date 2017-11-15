@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <math.h>
 #include <vector>
+#include <cstring>
 #include "random"
 #include "soil-master/src/SOIL/SOIL.h"
 
@@ -21,7 +22,7 @@ struct path {
 std::vector<path> paths;
 
 struct movingObject {
-    GLuint  texture;
+    float currIteration;
     float currIteration;
     point currPoint;
     path objPath;
@@ -35,6 +36,7 @@ GLuint texID,
        spikes,
        spikes2,
        heisenberg,
+       cashPile,
        meth;
 
 int p0[2],
@@ -46,7 +48,7 @@ int p0[2],
 std::random_device rd;
 std::mt19937 mt(rd());
 
-const int obstaclesGenTime = 900 ;
+const int obstaclesGenTime = 1200;
 int collectiblesGenTime;
 
 int w1 = 0;
@@ -54,12 +56,17 @@ int h1 = 0;
 
 int globalTime;
 
+bool done = false;
+
 int iw = 1280;
 int ih = 720;
 const float  PI = 3.1415926f;
 
 int scrollX = 0;
 int y_up = 0; // Offset for translating the character upon up and down buttons
+int charXOffset = 0;
+
+point charPosition[4];
 
 void reshape(int w, int h)
 {
@@ -115,21 +122,32 @@ void genTexture(movingObject object) {
 
     glPushMatrix();
 
-    printf("the values are %f and %f and the i is %f\n", object.currPoint.x, object.currPoint.y, object.currIteration);
+//    printf("the values are %f and %f and the i is %f\n", object.currPoint.x, object.currPoint.y, object.currIteration);
 
-    float scaling = (object.isCrystal)?0.5 : 1;
-    float translation =(object.isCrystal)? 300: 0;
-    glTranslatef(translation,  0, 0);
-    glScalef(scaling * 0.5, scaling * 0.5,0);
+    glScalef(0.5, 0.5, 0);
     glBegin(GL_QUADS);
-    glTexCoord2f(0,0);  glVertex2f(object.currPoint.x, object.currPoint.y + 100);
-    glTexCoord2f(1,0);  glVertex2f(object.currPoint.x + 100 , object.currPoint.y + 100);
-    glTexCoord2f(1,1);  glVertex2f(object.currPoint.x  +100, object.currPoint.y);
+    glTexCoord2f(0,0);  glVertex2f(object.currPoint.x, object.currPoint.y + 50);
+    glTexCoord2f(1,0);  glVertex2f(object.currPoint.x + 50 , object.currPoint.y + 50);
+    glTexCoord2f(1,1);  glVertex2f(object.currPoint.x  +50, object.currPoint.y);
     glTexCoord2f(0,1);  glVertex2f(object.currPoint.x, object.currPoint.y);
     glEnd();
 
     glPopMatrix();
 }
+
+void genCash() {
+    glBindTexture(GL_TEXTURE_2D, cashPile);
+    glPushMatrix();
+    glBegin(GL_QUADS);
+    glTexCoord2f(0,0);  glVertex2f(400,170);
+    glTexCoord2f(1,0);  glVertex2f(600, 170);
+    glTexCoord2f(1,1);  glVertex2f(600, 70);
+    glTexCoord2f(0,1);  glVertex2f(400, 70);
+    glEnd();
+    glPopMatrix();
+
+}
+
 void background()
 {
     glActiveTexture(GL_TEXTURE0 + 0);
@@ -215,6 +233,10 @@ GLvoid draw_circle(const GLfloat radius,const GLuint num_vertex, GLuint texture)
 }
 
 void Display()  {
+
+    if(done)
+        return;
+
     glClearColor (0.5,0.5,0.5,0.0);
 //    gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
@@ -231,7 +253,7 @@ void Display()  {
 
     glPushMatrix();
 
-    glTranslatef(200, y_up, 0);
+    glTranslatef(200 + charXOffset, y_up, 0);
 
 
 ////    HEAD
@@ -265,6 +287,8 @@ void Display()  {
     glEnd();
     glPopMatrix();
 
+//
+
 
     glEnable(GL_TEXTURE_2D);
 //    Generate obstacles and collectibles
@@ -273,13 +297,19 @@ void Display()  {
     }
     glDisable(GL_TEXTURE_2D);
 
+    glEnable(GL_TEXTURE_2D);
+
+    genCash();
+    glDisable(GL_TEXTURE_2D);
+
+
     glFlush();
 }
 
 void loadTextures() {
     texID = SOIL_load_OGL_texture // load an image file directly as a new OpenGL texture
             (
-                    "/home/moar/CLionProjects/Assignment1/bacgkround.png",
+                    "/home/moar/CLionProjects/Assignment1/bg.png",
                     SOIL_LOAD_AUTO,
                     SOIL_CREATE_NEW_ID,
                     SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
@@ -315,6 +345,14 @@ void loadTextures() {
     meth = SOIL_load_OGL_texture // load an image file directly as a new OpenGL texture
             (
                     "/home/moar/CLionProjects/Assignment1/meth.png",
+                    SOIL_LOAD_AUTO,
+                    SOIL_CREATE_NEW_ID,
+                    SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
+            );
+
+    cashPile = SOIL_load_OGL_texture // load an image file directly as a new OpenGL texture
+            (
+                    "/home/moar/CLionProjects/Assignment1/cash-pile.png",
                     SOIL_LOAD_AUTO,
                     SOIL_CREATE_NEW_ID,
                     SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
@@ -396,31 +434,94 @@ void SpecialFunction(int k, int x, int y)
     if (k == GLUT_KEY_DOWN && y_up >= -60)
         y_up -=30;
 
+    const float lowerBound = 111  + y_up;
+    const float upperBound = y_up + 160;
+
+    charPosition[0].y = upperBound;
+    charPosition[1].y = upperBound;
+    charPosition[2].y = lowerBound;
+    charPosition[3].y = lowerBound;
+
     glutPostRedisplay();//redisplay to update the screen with the changes
 }
 //
+
+bool inRange(point vertex) {
+    if(vertex.x  >= charPosition[0].x )
+        printf("some left bound\n");
+    if( vertex.x <= charPosition[1].x)
+        printf("some right bound\n");
+
+    if(vertex.y <= charPosition[0].y)
+        printf("some upper bound\n");
+
+    if(vertex.y >= charPosition[2].y)
+        printf("some lower bound\n");
+
+    return vertex.x  >= charPosition[0].x  && vertex.x <= charPosition[1].x
+    && vertex.y <= charPosition[0].y && vertex.y >= charPosition[2].y;
+}
+
+void checkForCollision() {
+
+
+    for (int i = 0 ; i < movingObjects.size(); i++) {
+        const float movingObjectLeftBound = movingObjects[i].currPoint.x;
+        const float movingObjectRightBound = movingObjects[i].currPoint.x + 50;
+        const float movingObjectUpperBound = movingObjects[i].currPoint.y + 50;
+        const float movingObjectLowerBound = movingObjects[i].currPoint.y;
+
+        point leftUpper = {movingObjectLeftBound * 0.5, movingObjectUpperBound * 0.5};
+        point rightUpper = {movingObjectRightBound * 0.5, movingObjectUpperBound * 0.5};
+        point leftLower = {movingObjectLeftBound * 0.5, movingObjectLowerBound * 0.5};
+        point rightLower = {movingObjectRightBound * 0.5, movingObjectLowerBound * 0.5};
+
+        if(inRange(leftUpper) || inRange(rightUpper) || inRange(leftLower) || inRange(rightLower)) {
+            charXOffset=(movingObjects[i].isCrystal)? charXOffset + 100 : charXOffset - 100;
+            charPosition[0].x = charPosition[0].x + charXOffset;
+            charPosition[1].x = charPosition[1].x + charXOffset;
+            charPosition[2].x = charPosition[2].x + charXOffset;
+            charPosition[3].x = charPosition[3].x + charXOffset;
+            movingObjects.erase(movingObjects.begin() + i);
+            if(charXOffset >= 300 || charXOffset <= -300)
+                done = true;
+            glutPostRedisplay();
+
+        } else {
+//            printf("not in rande\n");
+        }
+
+
+//        if(inRange(leftUpper, leftLower) || inRange(rightUpper, rightLower))
+//            printf("hit!");
+//        if(moving) {
+//            printf("hit!");
+//        }
+//        printf("\t%f %f %f %f\n", movingObjectLeftBound, movingObjectRightBound, movingObjectUpperBound, movingObjectLowerBound);
+
+    }
+
+}
+
+
 void timef(int val)//timer animation function, allows the user to pass an integer valu to the timer function.
 {
     globalTime ++;
+    checkForCollision();
+
 //    printf("global time is %d", globalTime);
-    scrollX += 300;
+    scrollX += 1;
     if(scrollX > iw)
         scrollX = 0;
 
     for (int i = 0 ; i < movingObjects.size(); i++) {
-        movingObjects[i].currIteration+= 0.5;
+        movingObjects[i].currIteration += 1;
         float t = static_cast<float>(movingObjects[i].currIteration)/999.0;
         bezier(movingObjects[i].currPoint,movingObjects[i].objPath.firstPoint,movingObjects[i].objPath.secondPoint,movingObjects[i].objPath.thirdPoint,movingObjects[i].objPath.fourthPoint,t);
 
-
-//        TODO: Remove from vectors when it's out of bound to save memory
-
-        if(movingObjects[i].currIteration > 1500)
+        if(movingObjects[i].currIteration > 1500) // erase objects out of bounds to free memory
             movingObjects.erase(movingObjects.begin() + i);
-//        if(movingObjects[i].currIteration >= 1) {
-//            movingObjects[i].nearLeft = !movingObjects[i].nearLeft;
-//            movingObjects[i].currT = 0;
-//        }
+
     }
 
     if(globalTime % obstaclesGenTime == 0) {
@@ -436,7 +537,7 @@ void timef(int val)//timer animation function, allows the user to pass an intege
     }
 
     if(globalTime % collectiblesGenTime == 0) {
-        std::uniform_real_distribution<double> dist(100, 400);
+        std::uniform_real_distribution<double> dist(600, obstaclesGenTime);
         point p;
         float t = static_cast<float>(0)/999.0;
         std::uniform_real_distribution<double> dist2(1, paths.size());
@@ -445,11 +546,12 @@ void timef(int val)//timer animation function, allows the user to pass an intege
         movingObjects.push_back(movingObject{meth, 0, p, paths[j], true});
     }
 
-    if(globalTime % 600) {
-        std::uniform_real_distribution<double> dist(6000, 8000);
+    if(globalTime % 7200 == 0) {
+        std::uniform_real_distribution<double> dist(5000, 7200);
         int random = dist(mt);
         collectiblesGenTime = random;
     }
+
 
     glutPostRedisplay();                        // redraw
     glutTimerFunc(1, timef, 0);                    //recall the time function after 1000
@@ -488,7 +590,6 @@ int main(int argc, char **argv)
     paths.push_back({a, b, c, d});
 
     for (int i = 0; i < 1000; ++i) {
-
         point p;
         float t = static_cast<float>(i)/999.0;
         bezier(p,a,b,c,d,t);
@@ -514,92 +615,28 @@ int main(int argc, char **argv)
     paths.push_back({a, b, c, d});
 
 
+    a = {800, 100};
+    b = {400, -200};
+    c = { 100, 400 };
+    d = { -100, 350 };
+    paths.push_back({a, b, c, d});
 
+    const float leftBound = (32 - (20 * cosf(PI /4))) - (((1.0f /6 ) * 20) * cosf(PI / 4)) + 190    ;
+    const float rightBound =  (40 + (20 * cosf(PI /4))) - (((1.0f /6 ) * 20) * cosf(PI / 4)) + 210;
+    const float lowerBound = 111  + y_up;
+    const float upperBound = y_up + 160;
 
-//    glutIdleFunc(anim);
-//    p0[0]=700;
-//    p0[1]=200;
-//
-//    p1[0]=700;
-//    p1[1]=600;
-//
-//    p2[0]=100;
-//    p2[1]=600;
-//
-//    p3[0]=100;
-//    p3[1]=200;
-
+    charPosition[0] = {leftBound, upperBound};
+    charPosition[1] = {rightBound, upperBound};
+    charPosition[2] = {leftBound, lowerBound};
+    charPosition[3] = {rightBound, lowerBound};
 
 //    glutKeyboardFunc(keyPressed);
 //    glutKeyboardUpFunc(keyUp);
     glutReshapeFunc(reshape);
     loadTextures();
     gluOrtho2D(0.0, 500, 0.0, 250);
-    collectiblesGenTime = 6000;
+    collectiblesGenTime = 2000;
     glutMainLoop();
 
 }
-
-
-
-/*
-glBegin(GL_LINES); // GL_LINE_STRIP, GL_LINE_LOOP
-//glColor3f(1.0f, 0.0f, 0.0f);
-glVertex3f(10.0f, 10.0f, 0.0f);
-glVertex3f(20.0f, 20.0f, 0.0f);
-glVertex3f(35.0f, 30.0f, 0.0f);
-//glColor3f(0.0f, 0.0f, 1.0f);
-glVertex3f(200.0f, 255.0f, 0.0f);
-glEnd();
-//*/
-
-/*
-glBegin(GL_TRIANGLES);
-glColor3f(1.0f, 0.0f, 0.0f);
-glVertex3f(100.0f, 100.0f, 0.0f);
-glColor3f(0.0f, 1.0f, 0.0f);
-glVertex3f(150.0f, 100.0f, 0.0f);
-glColor3f(0.0f, 0.0f, 1.0f);
-glVertex3f(125.0f, 50.0f, 0.0f);
-glEnd();
-//*/
-
-/*
-glBegin(GL_TRIANGLES); // GL_TRIANGLE_STRIP, GL_TRIANGLE_FAN
-glVertex3f(100.0f, 100.0f, 0.0f);
-glVertex3f(150.0f, 100.0f, 0.0f);
-glVertex3f(125.0f, 50.0f, 0.0f);
-glVertex3f(150.0f, 150.0f, 0.0f);
-glVertex3f(250.0f, 250.0f, 0.0f);
-glVertex3f(350.0f, 150.0f, 0.0f);
-glEnd();
-//*/
-
-/*
-glBegin(GL_QUADS); // GL_QUAD_STRIP
-glVertex3f(100.0f, 100.0f, 0.0f);
-glVertex3f(100.0f, 200.0f, 0.0f);
-glVertex3f(200.0f, 200.0f, 0.0f);
-glVertex3f(200.0f, 100.0f, 0.0f);
-glVertex3f(300.0f, 300.0f, 0.0f);
-glVertex3f(500.0f, 500.0f, 0.0f);
-glVertex3f(700.0f, 500.0f, 0.0f);
-glVertex3f(500.0f, 300.0f, 0.0f);
-glEnd();
-//*/
-
-/*
-glBegin(GL_POLYGON);
-glVertex3f(100.0f, 100.0f, 0.0f);
-glVertex3f(100.0f, 200.0f, 0.0f);
-glVertex3f(200.0f, 200.0f, 0.0f);
-glVertex3f(200.0f, 100.0f, 0.0f);
-glVertex3f(300.0f, 300.0f, 0.0f);
-glVertex3f(500.0f, 500.0f, 0.0f);
-glVertex3f(700.0f, 500.0f, 0.0f);
-glVertex3f(500.0f, 300.0f, 0.0f);
-glEnd();
-//*/
-
-
-//    glFlush();

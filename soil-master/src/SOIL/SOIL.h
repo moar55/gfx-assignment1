@@ -1,4 +1,4 @@
-/**
+"./soil-master/src/*.c"/**
 	@mainpage SOIL
 
 	Jonathan Dummer

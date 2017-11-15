@@ -5,10 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/moar/CLionProjects/Assignment1/soil-master/src/SOIL.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o"
-  "/home/moar/CLionProjects/Assignment1/soil-master/src/image_DXT.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o"
-  "/home/moar/CLionProjects/Assignment1/soil-master/src/image_helper.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o"
-  "/home/moar/CLionProjects/Assignment1/soil-master/src/stb_image_aug.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o"
+  "/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o"
+  "/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o"
+  "/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o"
+  "/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c" "/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -3,7 +3,7 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 11)
 
-file(GLOB SOURCES "main.cpp" "./soil-master/src/*.c")
+file(GLOB SOURCES "main.cpp" "../3dbigproject/soil-master/src/*.c")
 
 add_executable(untitled1 ${SOURCES})
 

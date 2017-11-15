@@ -81,118 +81,118 @@ CMakeFiles/untitled1.dir/main.cpp.o.provides: CMakeFiles/untitled1.dir/main.cpp.
 CMakeFiles/untitled1.dir/main.cpp.o.provides.build: CMakeFiles/untitled1.dir/main.cpp.o
 
 
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o: ../soil-master/src/SOIL.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o   -c /home/moar/CLionProjects/Assignment1/soil-master/src/SOIL.c
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o: /home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o   -c /home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c
 
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/Assignment1/soil-master/src/SOIL.c > CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.i
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c > CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i
 
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/Assignment1/soil-master/src/SOIL.c -o CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.s
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s
 
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.requires:
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.requires:
 
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.requires
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.requires
 
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.provides: CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.provides
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.provides: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.provides
 
-CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.provides.build: CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o
-
-
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o: ../soil-master/src/image_DXT.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o   -c /home/moar/CLionProjects/Assignment1/soil-master/src/image_DXT.c
-
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/Assignment1/soil-master/src/image_DXT.c > CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.i
-
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/Assignment1/soil-master/src/image_DXT.c -o CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.s
-
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.requires:
-
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.requires
-
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.provides: CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.provides
-
-CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.provides.build: CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.provides.build: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o
 
 
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o: ../soil-master/src/image_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o   -c /home/moar/CLionProjects/Assignment1/soil-master/src/image_helper.c
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o: /home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o   -c /home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c
 
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/Assignment1/soil-master/src/image_helper.c > CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.i
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c > CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i
 
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/Assignment1/soil-master/src/image_helper.c -o CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.s
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s
 
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.requires:
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.requires:
 
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.requires
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.requires
 
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.provides: CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.provides
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.provides: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.provides
 
-CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.provides.build: CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.provides.build: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o
 
 
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o: ../soil-master/src/stb_image_aug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o   -c /home/moar/CLionProjects/Assignment1/soil-master/src/stb_image_aug.c
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o: /home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o   -c /home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c
 
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/Assignment1/soil-master/src/stb_image_aug.c > CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.i
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c > CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i
 
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/Assignment1/soil-master/src/stb_image_aug.c -o CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.s
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s
 
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.requires:
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.requires:
 
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.requires
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.requires
 
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.provides: CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.requires
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.provides.build
-.PHONY : CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.provides
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.provides: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.provides
 
-CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.provides.build: CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.provides.build: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o
+
+
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o: /home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/moar/CLionProjects/Assignment1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o   -c /home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c
+
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c > CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i
+
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c -o CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s
+
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.requires:
+
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.requires
+
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.provides: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.requires
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.provides.build
+.PHONY : CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.provides
+
+CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.provides.build: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o
 
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
 "CMakeFiles/untitled1.dir/main.cpp.o" \
-"CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o" \
-"CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o" \
-"CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o" \
-"CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o"
+"CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o" \
+"CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o" \
+"CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o" \
+"CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1: CMakeFiles/untitled1.dir/main.cpp.o
-untitled1: CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o
-untitled1: CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o
-untitled1: CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o
-untitled1: CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o
+untitled1: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o
+untitled1: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o
+untitled1: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o
+untitled1: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: /usr/lib/x86_64-linux-gnu/libGLU.so
 untitled1: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -209,10 +209,10 @@ CMakeFiles/untitled1.dir/build: untitled1
 .PHONY : CMakeFiles/untitled1.dir/build
 
 CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/main.cpp.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o.requires
-CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o.requires
+CMakeFiles/untitled1.dir/requires: CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o.requires
 
 .PHONY : CMakeFiles/untitled1.dir/requires
 

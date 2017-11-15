@@ -84,19 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="/home/moar/CLionProjects/Assignment1/main.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/home/moar/CLionProjects/Assignment1/soil-master/src/SOIL.c">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/home/moar/CLionProjects/Assignment1/soil-master/src/image_DXT.c">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/home/moar/CLionProjects/Assignment1/soil-master/src/image_helper.c">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/home/moar/CLionProjects/Assignment1/soil-master/src/stb_image_aug.c">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/home/moar/CLionProjects/Assignment1/CMakeLists.txt">

@@ -123,6 +123,114 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.o: home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.o
+
+# target to build an object file
+home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.o
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.i: home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.i
+
+# target to preprocess a source file
+home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.i
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.s: home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.s
+
+# target to generate assembly for a file
+home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.c.s
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.o: home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.o
+
+# target to build an object file
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.o
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.i: home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.i
+
+# target to preprocess a source file
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.i
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.s: home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.s
+
+# target to generate assembly for a file
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.c.s
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.o: home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.o
+
+# target to build an object file
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.o
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.i: home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.i
+
+# target to preprocess a source file
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.i
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.s: home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.s
+
+# target to generate assembly for a file
+home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.c.s
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.o: home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.o
+
+# target to build an object file
+home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.o
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.i: home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.i
+
+# target to preprocess a source file
+home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.i
+
+home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.s: home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s
+
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.s
+
+# target to generate assembly for a file
+home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s
+.PHONY : home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.c.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,114 +258,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-soil-master/src/SOIL.o: soil-master/src/SOIL.c.o
-
-.PHONY : soil-master/src/SOIL.o
-
-# target to build an object file
-soil-master/src/SOIL.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.o
-.PHONY : soil-master/src/SOIL.c.o
-
-soil-master/src/SOIL.i: soil-master/src/SOIL.c.i
-
-.PHONY : soil-master/src/SOIL.i
-
-# target to preprocess a source file
-soil-master/src/SOIL.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.i
-.PHONY : soil-master/src/SOIL.c.i
-
-soil-master/src/SOIL.s: soil-master/src/SOIL.c.s
-
-.PHONY : soil-master/src/SOIL.s
-
-# target to generate assembly for a file
-soil-master/src/SOIL.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/SOIL.c.s
-.PHONY : soil-master/src/SOIL.c.s
-
-soil-master/src/image_DXT.o: soil-master/src/image_DXT.c.o
-
-.PHONY : soil-master/src/image_DXT.o
-
-# target to build an object file
-soil-master/src/image_DXT.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.o
-.PHONY : soil-master/src/image_DXT.c.o
-
-soil-master/src/image_DXT.i: soil-master/src/image_DXT.c.i
-
-.PHONY : soil-master/src/image_DXT.i
-
-# target to preprocess a source file
-soil-master/src/image_DXT.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.i
-.PHONY : soil-master/src/image_DXT.c.i
-
-soil-master/src/image_DXT.s: soil-master/src/image_DXT.c.s
-
-.PHONY : soil-master/src/image_DXT.s
-
-# target to generate assembly for a file
-soil-master/src/image_DXT.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_DXT.c.s
-.PHONY : soil-master/src/image_DXT.c.s
-
-soil-master/src/image_helper.o: soil-master/src/image_helper.c.o
-
-.PHONY : soil-master/src/image_helper.o
-
-# target to build an object file
-soil-master/src/image_helper.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.o
-.PHONY : soil-master/src/image_helper.c.o
-
-soil-master/src/image_helper.i: soil-master/src/image_helper.c.i
-
-.PHONY : soil-master/src/image_helper.i
-
-# target to preprocess a source file
-soil-master/src/image_helper.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.i
-.PHONY : soil-master/src/image_helper.c.i
-
-soil-master/src/image_helper.s: soil-master/src/image_helper.c.s
-
-.PHONY : soil-master/src/image_helper.s
-
-# target to generate assembly for a file
-soil-master/src/image_helper.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/image_helper.c.s
-.PHONY : soil-master/src/image_helper.c.s
-
-soil-master/src/stb_image_aug.o: soil-master/src/stb_image_aug.c.o
-
-.PHONY : soil-master/src/stb_image_aug.o
-
-# target to build an object file
-soil-master/src/stb_image_aug.c.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.o
-.PHONY : soil-master/src/stb_image_aug.c.o
-
-soil-master/src/stb_image_aug.i: soil-master/src/stb_image_aug.c.i
-
-.PHONY : soil-master/src/stb_image_aug.i
-
-# target to preprocess a source file
-soil-master/src/stb_image_aug.c.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.i
-.PHONY : soil-master/src/stb_image_aug.c.i
-
-soil-master/src/stb_image_aug.s: soil-master/src/stb_image_aug.c.s
-
-.PHONY : soil-master/src/stb_image_aug.s
-
-# target to generate assembly for a file
-soil-master/src/stb_image_aug.c.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/soil-master/src/stb_image_aug.c.s
-.PHONY : soil-master/src/stb_image_aug.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,21 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... untitled1"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.o"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.i"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/SOIL.s"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.o"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.i"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/image_DXT.s"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.o"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.i"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/image_helper.s"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.o"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.i"
+	@echo "... home/moar/CLionProjects/3dbigproject/soil-master/src/stb_image_aug.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... soil-master/src/SOIL.o"
-	@echo "... soil-master/src/SOIL.i"
-	@echo "... soil-master/src/SOIL.s"
-	@echo "... soil-master/src/image_DXT.o"
-	@echo "... soil-master/src/image_DXT.i"
-	@echo "... soil-master/src/image_DXT.s"
-	@echo "... soil-master/src/image_helper.o"
-	@echo "... soil-master/src/image_helper.i"
-	@echo "... soil-master/src/image_helper.s"
-	@echo "... soil-master/src/stb_image_aug.o"
-	@echo "... soil-master/src/stb_image_aug.i"
-	@echo "... soil-master/src/stb_image_aug.s"
 .PHONY : help
 
 
